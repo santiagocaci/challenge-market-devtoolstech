@@ -3,3 +3,4 @@ export * from './PriceRangeFilter';
 export * from './ColorFilter';
 export * from './RatingFilter';
 export * from './CategoryFilter';
+export * from './SectionCard';

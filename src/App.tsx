@@ -6,8 +6,8 @@ import {
   CategoryFilter,
   ColorFilter,
   PriceRangeFilter,
-  ProductCard,
   RatingFilter,
+  SectionCard,
 } from './components';
 import type { Filter } from './types/Filter';
 
@@ -72,13 +72,7 @@ function App() {
             }
           />
         </aside>
-        <section className='p-4 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3'>
-          {matches?.map(product => (
-            <article key={product.id}>
-              <ProductCard product={product} />
-            </article>
-          ))}
-        </section>
+        <SectionCard matches={matches!} />
       </div>
     </div>
   );
